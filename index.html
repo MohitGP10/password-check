@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script>
+        function checkPassword() {
+            var password = document.getElementById("password").value;
+            if (password === "123") {
+                window.location.href = "protected.html"; // Redirect to protected page
+            } else {
+                alert("Incorrect password!");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Enter Password to Access</h2>
+    <input type="password" id="password" placeholder="Enter Password">
+    <button onclick="checkPassword()">Submit</button>
+</body>
+</html>
